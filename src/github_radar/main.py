@@ -256,5 +256,63 @@ def setup_logging(level: str) -> None:
     )
 
 
+def run_chat_bot(config: AppConfig) -> int:
+    """Poll ClawBot for user messages, search GitHub, reply via PushPlus."""
+    from .chat import detect_language, handle_search_query
+    from .clawbot import get_access_key, get_messages, parse_search_query
+    from .notifiers import PushPlusNotifier
+
+    secret_key = config.push.pushplus_secret_key
+    if not secret_key or not config.push.pushplus_token:
+        logger.error("PUSHPLUS_SECRET_KEY and PUSHPLUS_TOKEN are required for chat bot")
+        return 1
+
+    access_key = get_access_key(config.push.pushplus_token, secret_key)
+    if not access_key:
+        logger.error("Failed to get ClawBot AccessKey")
+        return 1
+
+    messages = get_messages(access_key)
+    if not messages:
+        logger.info("No new ClawBot messages")
+        return 0
+
+    logger.info("Received %s ClawBot messages", len(messages))
+    notifier = PushPlusNotifier(config.push.pushplus_token)
+    max_results = config.chat_max_results
+
+    for msg in messages:
+        text = (msg.get("text") or "").strip()
+        if not text:
+            continue
+
+        logger.info("Processing message: %r", text)
+        query = parse_search_query(text)
+        if not query:
+            logger.info("Message not a search query, skipping: %r", text)
+            continue
+
+        language = detect_language(text)
+        result = handle_search_query(
+            query,
+            config,
+            language=language,
+            min_stars=config.chat_min_stars,
+            max_results=max_results,
+        )
+
+        title = f"🔍 搜索「{query}」的结果"
+        notifier.send(title, result)
+        logger.info("Replied to query %r", query)
+
+    return 0
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    args = sys.argv[1:]
+    if args and args[0] == "chat":
+        config = load_config()
+        setup_logging(config.log_level)
+        sys.exit(run_chat_bot(config))
+    else:
+        sys.exit(main())

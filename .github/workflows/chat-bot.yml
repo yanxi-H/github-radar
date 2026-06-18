@@ -1,0 +1,42 @@
+name: Chat Bot
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Poll ClawBot messages
+        env:
+          PYTHONPATH: src
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN != '' && secrets.GH_TOKEN || github.token }}
+          MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          MIMO_API_URL: ${{ secrets.MIMO_API_URL }}
+          MIMO_MODEL: ${{ secrets.MIMO_MODEL }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          PUSHPLUS_SECRET_KEY: ${{ secrets.PUSHPLUS_SECRET_KEY }}
+          DOMAIN_KEYWORDS: ${{ vars.DOMAIN_KEYWORDS }}
+          EXCLUDED_TERMS: ${{ vars.EXCLUDED_TERMS }}
+          CHAT_SEARCH_MIN_STARS: ${{ vars.CHAT_SEARCH_MIN_STARS }}
+          CHAT_MAX_RESULTS: ${{ vars.CHAT_MAX_RESULTS }}
+        run: python -m github_radar.main chat

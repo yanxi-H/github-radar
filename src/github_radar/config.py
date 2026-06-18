@@ -73,6 +73,7 @@ class MimoConfig:
 @dataclass(frozen=True)
 class PushConfig:
     pushplus_token: str | None = None
+    pushplus_secret_key: str | None = None
     wxpusher_app_token: str | None = None
     wxpusher_uids: tuple[str, ...] = field(default_factory=tuple)
     wxpusher_topic_ids: tuple[int, ...] = field(default_factory=tuple)
@@ -104,6 +105,8 @@ class AppConfig:
     domain_keywords: tuple[str, ...] = ()
     soft_exempt_keywords: tuple[str, ...] = ()
     queries: tuple[SearchQuery, ...] = ()
+    chat_min_stars: int = 100
+    chat_max_results: int = 3
     dry_run: bool = False
     log_level: str = "INFO"
 
@@ -136,6 +139,7 @@ def load_config() -> AppConfig:
         ),
         push=PushConfig(
             pushplus_token=os.getenv("PUSHPLUS_TOKEN"),
+            pushplus_secret_key=os.getenv("PUSHPLUS_SECRET_KEY"),
             wxpusher_app_token=os.getenv("WXPUSHER_APP_TOKEN"),
             wxpusher_uids=parse_csv(os.getenv("WXPUSHER_UIDS")),
             wxpusher_topic_ids=parse_int_csv(os.getenv("WXPUSHER_TOPIC_IDS")),
@@ -161,6 +165,8 @@ def load_config() -> AppConfig:
         domain_keywords=domain_keywords,
         soft_exempt_keywords=soft_exempt_keywords,
         queries=queries,
+        chat_min_stars=get_int_env("CHAT_SEARCH_MIN_STARS", 100),
+        chat_max_results=get_int_env("CHAT_MAX_RESULTS", 3),
         dry_run=get_bool_env("DRY_RUN", False),
         log_level=os.getenv("LOG_LEVEL", "INFO").upper(),
     )
