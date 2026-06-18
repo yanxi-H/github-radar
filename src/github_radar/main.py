@@ -231,6 +231,9 @@ def _select(config: AppConfig, scored: list[Repository], min_score: float) -> li
             continue
         if repo.domain_relevance_score < config.min_domain_relevance:
             continue
+        # Skip pure CLI tools — users want plugins/skills/extensions, not CLI apps.
+        if repo.project_type == "CLI 工具":
+            continue
         qualified.append(repo)
 
     return qualified[: config.max_push_count]

@@ -191,40 +191,60 @@ def generate_tags(repo: Repository, domain_keywords: tuple[str, ...]) -> tuple[s
 def classify_project_type(repo: Repository, tags: tuple[str, ...]) -> str:
     """Heuristic project type from metadata + README evidence."""
     text = searchable_text(repo)
-    name = repo.name.lower()
 
-    # Rule-based detection from tags and text signals.
-    if any(t in tags for t in ("CLI",)):
-        return "CLI 工具"
+    # Specific types first (more informative than CLI).
+    if any(t in tags for t in ("Plugin",)):
+        return "插件/扩展"
+    if any(t in tags for t in ("SDK",)):
+        return "SDK/API 客户端"
+    if any(t in tags for t in ("UI Library",)):
+        return "UI 组件库"
     if any(t in tags for t in ("ML/AI",)):
         return "AI/ML 项目"
     if any(t in tags for t in ("Web Framework",)):
         return "Web 框架"
     if any(t in tags for t in ("Database",)):
         return "数据库/ORM"
-    if any(t in tags for t in ("DevOps",)):
-        return "DevOps 工具"
     if any(t in tags for t in ("Testing",)):
         return "测试框架"
-    if any(t in tags for t in ("SDK",)):
-        return "SDK/API 客户端"
-    if any(t in tags for t in ("UI Library",)):
-        return "UI 组件库"
     if any(t in tags for t in ("Animation",)):
         return "动效/动画库"
     if any(t in tags for t in ("Parser",)):
         return "解析器/编译器"
     if any(t in tags for t in ("Auth",)):
         return "认证/授权"
-    if any(t in tags for t in ("Plugin",)):
-        return "插件/扩展"
     if any(t in tags for t in ("Async",)):
         return "异步/并发框架"
+    if any(t in tags for t in ("DevOps",)):
+        return "DevOps 工具"
+
+    # Domain-specific types (AI coding context).
+    if any(s in text for s in ("skill", "skills", "superpowers")):
+        return "AI 编程技能"
+    if any(s in text for s in ("mcp server", "model context protocol", "mcp")):
+        return "MCP 服务"
+    if any(s in text for s in ("cursor rules", "cursor rule", ".cursorrules", "cursor-rules")):
+        return "Cursor 规则"
+    if any(s in text for s in ("prompt", "prompts", "prompt engineering")):
+        return "AI 提示词"
+    if any(s in text for s in ("workflow", "automation", "pipeline")):
+        return "自动化工作流"
+    if any(s in text for s in ("code review", "review tool", "pr review")):
+        return "代码审查工具"
+    if any(s in text for s in ("extension", "vscode extension", "plugin")):
+        return "编辑器扩展"
+
+    # CLI only as last resort, and only when no other signals present.
+    if any(t in tags for t in ("CLI",)):
+        # Don't classify as CLI if it also has SDK/Plugin/Skill signals.
+        if not any(s in text for s in ("sdk", "library", "framework", "skill", "plugin", "extension", "mcp")):
+            return "CLI 工具"
+        return "开发工具"
 
     # Text-based fallback.
     if any(s in text for s in ("framework", "library", "sdk")):
         return "通用框架/库"
-    if any(s in text for s in ("tool", "utility", "helper", "cli")):
+    if any(s in text for s in ("tool", "utility", "helper")):
         return "开发工具"
     return "其他"
 
