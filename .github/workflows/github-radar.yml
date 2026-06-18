@@ -1,0 +1,67 @@
+name: GitHub Radar
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run GitHub Radar
+        env:
+          PYTHONPATH: src
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN != '' && secrets.GH_TOKEN || github.token }}
+          MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          MIMO_API_URL: ${{ secrets.MIMO_API_URL }}
+          MIMO_MODEL: ${{ secrets.MIMO_MODEL }}
+          SEARCH_QUERIES: ${{ vars.SEARCH_QUERIES }}
+          DOMAIN_KEYWORDS: ${{ vars.DOMAIN_KEYWORDS }}
+          SOFT_EXEMPT_KEYWORDS: ${{ vars.SOFT_EXEMPT_KEYWORDS }}
+          APP_TITLE: ${{ vars.APP_TITLE }}
+          MAX_PUSH_COUNT: ${{ vars.MAX_PUSH_COUNT }}
+          MIN_SCORE: ${{ vars.MIN_SCORE }}
+          MIN_DOMAIN_RELEVANCE: ${{ vars.MIN_DOMAIN_RELEVANCE }}
+          PUSHED_WITHIN_HOURS: ${{ vars.PUSHED_WITHIN_HOURS }}
+          DRY_RUN: ${{ vars.DRY_RUN }}
+          ENABLE_AI_MESSAGE_COMPOSER: ${{ vars.ENABLE_AI_MESSAGE_COMPOSER }}
+          WECHAT_DIGEST_MAX_CHARS: ${{ vars.WECHAT_DIGEST_MAX_CHARS }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          WXPUSHER_APP_TOKEN: ${{ secrets.WXPUSHER_APP_TOKEN }}
+          WXPUSHER_UIDS: ${{ secrets.WXPUSHER_UIDS }}
+          WXPUSHER_TOPIC_IDS: ${{ secrets.WXPUSHER_TOPIC_IDS }}
+          BARK_URL: ${{ secrets.BARK_URL }}
+          BARK_KEY: ${{ secrets.BARK_KEY }}
+          BARK_SERVER: ${{ secrets.BARK_SERVER }}
+        run: python -m github_radar.main
+
+      - name: Persist seen state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain data/seen.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/seen.json
+            git commit -m "chore: update github radar seen state"
+            git push
+          else
+            echo "No seen state changes to commit."
+          fi

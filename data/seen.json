@@ -1,0 +1,1823 @@
+{
+  "version": 2,
+  "updated_at": "2026-06-17T21:53:19.902418+00:00",
+  "meta": {
+    "consecutive_empty_runs": 2
+  },
+  "repositories": [
+    {
+      "full_name": "airbnb/lottie-ios",
+      "url": "https://github.com/airbnb/lottie-ios",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T16:38:21.743666+00:00",
+      "pushed_at": "2026-06-15T20:17:47+00:00",
+      "stars": 26763,
+      "final_score": 69.4,
+      "ios_relevance_score": 17.0,
+      "practical_value_score": 16.0,
+      "visual_motion_score": 17.0,
+      "learning_value_score": 7.0,
+      "health_score": 12.4,
+      "score_breakdown": {
+        "ios_relevance": 17.0,
+        "practical_value": 16.0,
+        "visual_motion": 17.0,
+        "learning_value": 7.0,
+        "health": 12.4,
+        "final_score": 69.4
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "macOS",
+        "visionOS",
+        "Animation",
+        "Transition",
+        "Gesture",
+        "Loading",
+        "Metal/3D"
+      ],
+      "is_frontend": false,
+      "last_notified_at": "2026-06-17T16:38:21.743743+00:00"
+    },
+    {
+      "full_name": "amosgyamfi/open-swiftui-animations",
+      "url": "https://github.com/amosgyamfi/open-swiftui-animations",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T07:09:42+00:00",
+      "stars": 5508,
+      "score": 73.4,
+      "score_breakdown": {
+        "stars": 19.9,
+        "recent_activity": 16.1,
+        "keyword_match": 18.4,
+        "readme_quality": 19.0,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "Animation",
+        "Transition",
+        "Liquid Glass"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    },
+    {
+      "full_name": "bcakmakoglu/vue-flow",
+      "url": "https://github.com/bcakmakoglu/vue-flow",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T16:32:14+00:00",
+      "stars": 6662,
+      "score": 74.7,
+      "score_breakdown": {
+        "stars": 20.3,
+        "recent_activity": 20.0,
+        "keyword_match": 17.4,
+        "readme_quality": 17.0,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Animation",
+        "Gesture",
+        "React",
+        "Vue",
+        "TypeScript",
+        "Component"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    },
+    {
+      "full_name": "bitjaru/styleseed",
+      "url": "https://github.com/bitjaru/styleseed",
+      "first_seen_at": "2026-06-17T15:48:11.901100+00:00",
+      "last_seen_at": "2026-06-17T15:48:11.901100+00:00",
+      "pushed_at": "2026-06-17T02:51:55+00:00",
+      "stars": 508,
+      "final_score": 38.8,
+      "ios_relevance_score": 9.0,
+      "practical_value_score": 1.0,
+      "visual_motion_score": 13.8,
+      "learning_value_score": 5.0,
+      "health_score": 10.0,
+      "score_breakdown": {
+        "ios_relevance": 9.0,
+        "practical_value": 1.0,
+        "visual_motion": 13.8,
+        "learning_value": 5.0,
+        "health": 10.0,
+        "final_score": 38.8
+      },
+      "star_growth": 0,
+      "tags": [
+        "Markdown",
+        "React",
+        "TypeScript",
+        "Motion",
+        "Design System",
+        "Component"
+      ],
+      "is_frontend": true
+    },
+    {
+      "full_name": "carbon-design-system/carbon",
+      "url": "https://github.com/carbon-design-system/carbon",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T14:45:50+00:00",
+      "stars": 9171,
+      "score": 65.7,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 20.0,
+        "keyword_match": 10.2,
+        "readme_quality": 15.0,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "carbon-design-system/carbon-components-svelte",
+      "url": "https://github.com/carbon-design-system/carbon-components-svelte",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T03:21:31+00:00",
+      "stars": 2877,
+      "score": 52.2,
+      "score_breakdown": {
+        "stars": 18.4,
+        "recent_activity": 15.2,
+        "keyword_match": 6.6,
+        "readme_quality": 19.0,
+        "star_growth": 2.0,
+        "focus": 0.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 1,
+      "tags": [
+        "TypeScript",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "chakra-ui/ark",
+      "url": "https://github.com/chakra-ui/ark",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T16:35:43+00:00",
+      "stars": 5232,
+      "score": 74.2,
+      "score_breakdown": {
+        "stars": 19.8,
+        "recent_activity": 20.0,
+        "keyword_match": 16.4,
+        "readme_quality": 18.0,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    },
+    {
+      "full_name": "chakra-ui/chakra-ui",
+      "url": "https://github.com/chakra-ui/chakra-ui",
+      "first_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "last_seen_at": "2026-06-17T14:50:44.341910+00:00",
+      "pushed_at": "2026-06-17T13:58:13+00:00",
+      "stars": 40441,
+      "score": 67.8,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 19.6,
+        "keyword_match": 15.2,
+        "readme_quality": 17.0,
+        "star_growth": 0.0,
+        "focus": 26.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "UIKit",
+        "React",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Motion",
+        "Design System"
+      ],
+      "last_notified_at": "2026-06-17T14:50:44.341944+00:00"
+    },
+    {
+      "full_name": "chakra-ui/zag",
+      "url": "https://github.com/chakra-ui/zag",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T08:54:02.471257+00:00",
+      "pushed_at": "2026-06-15T13:09:59+00:00",
+      "stars": 5116,
+      "score": 43.3,
+      "score_breakdown": {
+        "stars": 19.7,
+        "recent_activity": 1.8,
+        "keyword_match": 10.8,
+        "readme_quality": 18.0,
+        "star_growth": 2.0,
+        "focus": 20.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 1,
+      "tags": [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "ChenYilong/CYLTabBarController",
+      "url": "https://github.com/ChenYilong/CYLTabBarController",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T21:53:19.902070+00:00",
+      "pushed_at": "2026-05-20T13:24:28+00:00",
+      "stars": 6995,
+      "final_score": 57.6,
+      "ios_relevance_score": 20.0,
+      "practical_value_score": 3.0,
+      "visual_motion_score": 16.0,
+      "learning_value_score": 10.0,
+      "health_score": 8.6,
+      "score_breakdown": {
+        "ios_relevance": 20.0,
+        "practical_value": 3.0,
+        "visual_motion": 16.0,
+        "learning_value": 10.0,
+        "health": 8.6,
+        "final_score": 57.6
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "UIKit",
+        "Animation",
+        "Navigation",
+        "Liquid Glass"
+      ],
+      "is_frontend": false,
+      "project_type": "导航/Tab/Dock"
+    },
+    {
+      "full_name": "cloudscape-design/components",
+      "url": "https://github.com/cloudscape-design/components",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T14:40:51+00:00",
+      "stars": 2596,
+      "score": 58.4,
+      "score_breakdown": {
+        "stars": 18.2,
+        "recent_activity": 19.9,
+        "keyword_match": 10.2,
+        "readme_quality": 14.6,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "codse/animata",
+      "url": "https://github.com/codse/animata",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T02:41:40.707071+00:00",
+      "pushed_at": "2026-06-15T07:06:39+00:00",
+      "stars": 2724,
+      "score": 55.2,
+      "score_breakdown": {
+        "stars": 18.3,
+        "recent_activity": 1.8,
+        "keyword_match": 18.1,
+        "readme_quality": 17.0,
+        "star_growth": 0.0,
+        "focus": 44.0,
+        "generic_penalty": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Animation",
+        "React",
+        "TypeScript",
+        "Component",
+        "Motion",
+        "Design System",
+        "Framer Motion"
+      ]
+    },
+    {
+      "full_name": "cometchat/cometchat-uikit-ios",
+      "url": "https://github.com/cometchat/cometchat-uikit-ios",
+      "first_seen_at": "2026-06-17T15:48:11.901100+00:00",
+      "last_seen_at": "2026-06-17T15:48:11.901100+00:00",
+      "pushed_at": "2026-06-17T11:55:16+00:00",
+      "stars": 536,
+      "final_score": 46.5,
+      "ios_relevance_score": 26.0,
+      "practical_value_score": 0.0,
+      "visual_motion_score": 3.0,
+      "learning_value_score": 7.0,
+      "health_score": 10.5,
+      "score_breakdown": {
+        "ios_relevance": 26.0,
+        "practical_value": 0.0,
+        "visual_motion": 3.0,
+        "learning_value": 7.0,
+        "health": 10.5,
+        "final_score": 46.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Component"
+      ],
+      "is_frontend": false
+    },
+    {
+      "full_name": "DavidHDev/vue-bits",
+      "url": "https://github.com/DavidHDev/vue-bits",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-16T08:38:04+00:00",
+      "stars": 4156,
+      "score": 47.6,
+      "score_breakdown": {
+        "stars": 19.3,
+        "recent_activity": 7.4,
+        "keyword_match": 12.5,
+        "readme_quality": 15.4,
+        "star_growth": 2.0,
+        "focus": 18.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 1,
+      "tags": [
+        "Animation",
+        "React",
+        "Vue",
+        "TypeScript",
+        "Frontend",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "DebugSwift/DebugSwift",
+      "url": "https://github.com/DebugSwift/DebugSwift",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T16:38:21.743666+00:00",
+      "pushed_at": "2026-06-17T03:00:12+00:00",
+      "stars": 2320,
+      "final_score": 76.4,
+      "ios_relevance_score": 28.0,
+      "practical_value_score": 15.0,
+      "visual_motion_score": 9.8,
+      "learning_value_score": 12.4,
+      "health_score": 11.2,
+      "score_breakdown": {
+        "ios_relevance": 28.0,
+        "practical_value": 15.0,
+        "visual_motion": 9.8,
+        "learning_value": 12.4,
+        "health": 11.2,
+        "final_score": 76.4
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Animation",
+        "Rich Text",
+        "Metal/3D"
+      ],
+      "is_frontend": false,
+      "last_notified_at": "2026-06-17T16:38:21.743743+00:00"
+    },
+    {
+      "full_name": "ecomfe/vue-echarts",
+      "url": "https://github.com/ecomfe/vue-echarts",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T19:28:54.579391+00:00",
+      "pushed_at": "2026-06-16T17:45:25+00:00",
+      "stars": 10716,
+      "score": 63.8,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 19.3,
+        "keyword_match": 6.0,
+        "readme_quality": 18.0,
+        "star_growth": 0.0,
+        "focus": 20.0,
+        "generic_penalty": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Vue",
+        "TypeScript",
+        "Component"
+      ],
+      "last_notified_at": "2026-06-16T19:28:54.579419+00:00"
+    },
+    {
+      "full_name": "elastic/eui",
+      "url": "https://github.com/elastic/eui",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T14:21:44+00:00",
+      "stars": 6328,
+      "score": 56.6,
+      "score_breakdown": {
+        "stars": 20.2,
+        "recent_activity": 19.8,
+        "keyword_match": 10.2,
+        "readme_quality": 16.0,
+        "star_growth": 3.9,
+        "focus": 0.0,
+        "generic_penalty": 13.5
+      },
+      "star_growth": 3,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "graphieros/vue-data-ui",
+      "url": "https://github.com/graphieros/vue-data-ui",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T08:50:08+00:00",
+      "stars": 2413,
+      "score": 54.9,
+      "score_breakdown": {
+        "stars": 18.0,
+        "recent_activity": 17.5,
+        "keyword_match": 6.9,
+        "readme_quality": 17.0,
+        "star_growth": 0.0,
+        "focus": 10.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "Vue",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "guokaigdg/animal-island-ui",
+      "url": "https://github.com/guokaigdg/animal-island-ui",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T13:34:13+00:00",
+      "stars": 3327,
+      "score": 68.6,
+      "score_breakdown": {
+        "stars": 18.7,
+        "recent_activity": 19.5,
+        "keyword_match": 14.9,
+        "readme_quality": 19.0,
+        "star_growth": 5.5,
+        "focus": 18.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 6,
+      "tags": [
+        "iOS",
+        "Animation",
+        "React",
+        "Vue",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "handsontable/handsontable",
+      "url": "https://github.com/handsontable/handsontable",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T15:41:55+00:00",
+      "stars": 21934,
+      "score": 73.3,
+      "score_breakdown": {
+        "stars": 23.1,
+        "recent_activity": 19.6,
+        "keyword_match": 10.6,
+        "readme_quality": 20.0,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Component"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    },
+    {
+      "full_name": "inkline/inkline",
+      "url": "https://github.com/inkline/inkline",
+      "first_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T06:00:24+00:00",
+      "stars": 1441,
+      "score": 40.0,
+      "score_breakdown": {
+        "stars": 16.8,
+        "recent_activity": 16.3,
+        "keyword_match": 10.2,
+        "readme_quality": 5.7,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Vue",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "inokawa/virtua",
+      "url": "https://github.com/inokawa/virtua",
+      "first_seen_at": "2026-06-17T02:41:40.707071+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T02:48:33+00:00",
+      "stars": 3595,
+      "score": 58.7,
+      "score_breakdown": {
+        "stars": 18.9,
+        "recent_activity": 15.0,
+        "keyword_match": 9.3,
+        "readme_quality": 20.0,
+        "star_growth": 0.0,
+        "focus": 10.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "React",
+        "Vue",
+        "TypeScript",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "JohannesKlauss/react-hotkeys-hook",
+      "url": "https://github.com/JohannesKlauss/react-hotkeys-hook",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T02:41:40.707071+00:00",
+      "pushed_at": "2026-06-15T02:51:36+00:00",
+      "stars": 3471,
+      "score": 32.3,
+      "score_breakdown": {
+        "stars": 18.8,
+        "recent_activity": 0.1,
+        "keyword_match": 5.4,
+        "readme_quality": 17.0,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "JOYCEQL/magic-resume",
+      "url": "https://github.com/JOYCEQL/magic-resume",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T17:16:38.927745+00:00",
+      "pushed_at": "2026-06-15T15:56:37+00:00",
+      "stars": 8520,
+      "score": 61.8,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 9.4,
+        "keyword_match": 13.9,
+        "readme_quality": 18.0,
+        "star_growth": 0.0,
+        "focus": 44.0,
+        "generic_penalty": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Animation",
+        "React",
+        "TypeScript",
+        "Motion",
+        "Framer Motion"
+      ],
+      "last_notified_at": "2026-06-16T17:16:38.927772+00:00"
+    },
+    {
+      "full_name": "Juanpe/SkeletonView",
+      "url": "https://github.com/Juanpe/SkeletonView",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T21:53:19.902070+00:00",
+      "pushed_at": "2026-06-02T22:18:13+00:00",
+      "stars": 12873,
+      "final_score": 64.5,
+      "ios_relevance_score": 15.0,
+      "practical_value_score": 14.0,
+      "visual_motion_score": 18.0,
+      "learning_value_score": 7.0,
+      "health_score": 10.5,
+      "score_breakdown": {
+        "ios_relevance": 15.0,
+        "practical_value": 14.0,
+        "visual_motion": 18.0,
+        "learning_value": 7.0,
+        "health": 10.5,
+        "final_score": 64.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "Animation",
+        "Loading"
+      ],
+      "is_frontend": false,
+      "project_type": "加载/骨架屏"
+    },
+    {
+      "full_name": "kirillzyusko/react-native-keyboard-controller",
+      "url": "https://github.com/kirillzyusko/react-native-keyboard-controller",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T09:17:21+00:00",
+      "stars": 3619,
+      "score": 49.8,
+      "score_breakdown": {
+        "stars": 18.9,
+        "recent_activity": 17.7,
+        "keyword_match": 10.7,
+        "readme_quality": 7.0,
+        "star_growth": 0.0,
+        "focus": 18.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Animation",
+        "React",
+        "TypeScript",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "krzyzanowskim/STTextView",
+      "url": "https://github.com/krzyzanowskim/STTextView",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T16:38:21.743666+00:00",
+      "pushed_at": "2026-05-19T22:59:11+00:00",
+      "stars": 1556,
+      "final_score": 72.5,
+      "ios_relevance_score": 30.0,
+      "practical_value_score": 15.0,
+      "visual_motion_score": 7.4,
+      "learning_value_score": 12.4,
+      "health_score": 7.7,
+      "score_breakdown": {
+        "ios_relevance": 30.0,
+        "practical_value": 15.0,
+        "visual_motion": 7.4,
+        "learning_value": 12.4,
+        "health": 7.7,
+        "final_score": 72.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "macOS",
+        "Rich Text",
+        "Metal/3D",
+        "Component"
+      ],
+      "is_frontend": false,
+      "last_notified_at": "2026-06-17T16:38:21.743743+00:00"
+    },
+    {
+      "full_name": "lobehub/lobe-ui",
+      "url": "https://github.com/lobehub/lobe-ui",
+      "first_seen_at": "2026-06-17T08:54:02.471257+00:00",
+      "last_seen_at": "2026-06-17T08:54:05.661096+00:00",
+      "pushed_at": "2026-06-16T04:53:19+00:00",
+      "stars": 2051,
+      "score": 60.3,
+      "score_breakdown": {
+        "stars": 17.6,
+        "recent_activity": 8.3,
+        "keyword_match": 16.4,
+        "readme_quality": 18.0,
+        "star_growth": 0.0,
+        "focus": 26.0,
+        "generic_penalty": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Animation",
+        "React",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Motion",
+        "Design System"
+      ],
+      "last_notified_at": "2026-06-17T08:54:05.661132+00:00"
+    },
+    {
+      "full_name": "mantinedev/mantine",
+      "url": "https://github.com/mantinedev/mantine",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T16:30:13+00:00",
+      "stars": 31263,
+      "score": 72.2,
+      "score_breakdown": {
+        "stars": 23.9,
+        "recent_activity": 19.9,
+        "keyword_match": 14.0,
+        "readme_quality": 14.4,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "UIKit",
+        "Gesture",
+        "React",
+        "TypeScript",
+        "Component"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    },
+    {
+      "full_name": "matschik/component-party.dev",
+      "url": "https://github.com/matschik/component-party.dev",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T02:41:40.707071+00:00",
+      "pushed_at": "2026-06-15T07:07:57+00:00",
+      "stars": 3317,
+      "score": 34.1,
+      "score_breakdown": {
+        "stars": 18.7,
+        "recent_activity": 1.9,
+        "keyword_match": 7.5,
+        "readme_quality": 15.0,
+        "star_growth": 0.0,
+        "focus": 10.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "migueldeicaza/SwiftTerm",
+      "url": "https://github.com/migueldeicaza/SwiftTerm",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T21:53:19.902070+00:00",
+      "pushed_at": "2026-06-16T02:12:58+00:00",
+      "stars": 1577,
+      "final_score": 55.9,
+      "ios_relevance_score": 22.0,
+      "practical_value_score": 10.0,
+      "visual_motion_score": 2.8,
+      "learning_value_score": 10.0,
+      "health_score": 11.1,
+      "score_breakdown": {
+        "ios_relevance": 22.0,
+        "practical_value": 10.0,
+        "visual_motion": 2.8,
+        "learning_value": 10.0,
+        "health": 11.1,
+        "final_score": 55.9
+      },
+      "star_growth": 1,
+      "tags": [
+        "iOS",
+        "Swift",
+        "UIKit",
+        "macOS",
+        "visionOS",
+        "Metal/3D",
+        "Component"
+      ],
+      "is_frontend": false,
+      "project_type": "UIKit 组件"
+    },
+    {
+      "full_name": "mikelikesdesign/SwiftUI-experiments",
+      "url": "https://github.com/mikelikesdesign/SwiftUI-experiments",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T21:53:19.902070+00:00",
+      "pushed_at": "2026-06-07T13:30:31+00:00",
+      "stars": 2031,
+      "final_score": 64.4,
+      "ios_relevance_score": 28.0,
+      "practical_value_score": 0.0,
+      "visual_motion_score": 18.0,
+      "learning_value_score": 8.4,
+      "health_score": 10.0,
+      "score_breakdown": {
+        "ios_relevance": 28.0,
+        "practical_value": 0.0,
+        "visual_motion": 18.0,
+        "learning_value": 8.4,
+        "health": 10.0,
+        "final_score": 64.4
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Animation",
+        "Gesture",
+        "Haptics",
+        "Charts",
+        "Navigation",
+        "Metal/3D"
+      ],
+      "is_frontend": false,
+      "project_type": "导航/Tab/Dock"
+    },
+    {
+      "full_name": "moreSwift/swift-cross-ui",
+      "url": "https://github.com/moreSwift/swift-cross-ui",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T16:38:21.743666+00:00",
+      "pushed_at": "2026-06-13T05:37:29+00:00",
+      "stars": 1590,
+      "final_score": 66.0,
+      "ios_relevance_score": 30.0,
+      "practical_value_score": 13.0,
+      "visual_motion_score": 1.4,
+      "learning_value_score": 11.0,
+      "health_score": 10.6,
+      "score_breakdown": {
+        "ios_relevance": 30.0,
+        "practical_value": 13.0,
+        "visual_motion": 1.4,
+        "learning_value": 11.0,
+        "health": 10.6,
+        "final_score": 66.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "macOS"
+      ],
+      "is_frontend": false,
+      "last_notified_at": "2026-06-17T16:38:21.743743+00:00"
+    },
+    {
+      "full_name": "motiondivision/motion",
+      "url": "https://github.com/motiondivision/motion",
+      "first_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "last_seen_at": "2026-06-17T14:50:44.341910+00:00",
+      "pushed_at": "2026-06-17T14:21:53+00:00",
+      "stars": 32393,
+      "score": 76.3,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 19.8,
+        "keyword_match": 20.0,
+        "readme_quality": 16.0,
+        "star_growth": 0.0,
+        "focus": 100.0,
+        "generic_penalty": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Animation",
+        "Transition",
+        "Gesture",
+        "React",
+        "Vue",
+        "TypeScript",
+        "Component",
+        "Motion",
+        "Framer Motion"
+      ],
+      "last_notified_at": "2026-06-17T14:50:44.341944+00:00"
+    },
+    {
+      "full_name": "mui/base-ui",
+      "url": "https://github.com/mui/base-ui",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T13:13:26+00:00",
+      "stars": 9974,
+      "score": 59.1,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 19.3,
+        "keyword_match": 10.2,
+        "readme_quality": 8.1,
+        "star_growth": 5.5,
+        "focus": 0.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 6,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "mui/material-ui",
+      "url": "https://github.com/mui/material-ui",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-16T20:31:26+00:00",
+      "stars": 98425,
+      "score": 53.0,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 12.4,
+        "keyword_match": 6.6,
+        "readme_quality": 16.0,
+        "star_growth": 2.0,
+        "focus": 0.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 1,
+      "tags": [
+        "React",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "ncdai/chanhdai.com",
+      "url": "https://github.com/ncdai/chanhdai.com",
+      "first_seen_at": "2026-06-17T08:54:02.471257+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T14:03:35+00:00",
+      "stars": 2029,
+      "score": 65.1,
+      "score_breakdown": {
+        "stars": 17.6,
+        "recent_activity": 19.7,
+        "keyword_match": 10.7,
+        "readme_quality": 17.0,
+        "star_growth": 4.6,
+        "focus": 18.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 4,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Motion"
+      ]
+    },
+    {
+      "full_name": "netease-kit/nim-uikit-ios",
+      "url": "https://github.com/netease-kit/nim-uikit-ios",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T21:53:19.902070+00:00",
+      "pushed_at": "2026-05-20T10:37:50+00:00",
+      "stars": 1537,
+      "final_score": 36.1,
+      "ios_relevance_score": 20.0,
+      "practical_value_score": 0.0,
+      "visual_motion_score": 1.4,
+      "learning_value_score": 7.0,
+      "health_score": 7.7,
+      "score_breakdown": {
+        "ios_relevance": 20.0,
+        "practical_value": 0.0,
+        "visual_motion": 1.4,
+        "learning_value": 7.0,
+        "health": 7.7,
+        "final_score": 36.1
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "UIKit"
+      ],
+      "is_frontend": false,
+      "project_type": "UIKit 组件"
+    },
+    {
+      "full_name": "NG-ZORRO/ng-zorro-antd",
+      "url": "https://github.com/NG-ZORRO/ng-zorro-antd",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-15T19:28:43+00:00",
+      "stars": 9149,
+      "score": 47.8,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 1.9,
+        "keyword_match": 8.4,
+        "readme_quality": 17.0,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "OnsenUI/OnsenUI",
+      "url": "https://github.com/OnsenUI/OnsenUI",
+      "first_seen_at": "2026-06-16T19:28:51.725026+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T03:34:27+00:00",
+      "stars": 8866,
+      "score": 61.0,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 15.3,
+        "keyword_match": 10.7,
+        "readme_quality": 19.0,
+        "star_growth": 0.0,
+        "focus": 18.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Gesture",
+        "React",
+        "Vue",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "OvidijusParsiunas/deep-chat",
+      "url": "https://github.com/OvidijusParsiunas/deep-chat",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T14:49:46+00:00",
+      "stars": 3642,
+      "score": 61.9,
+      "score_breakdown": {
+        "stars": 18.9,
+        "recent_activity": 20.0,
+        "keyword_match": 7.5,
+        "readme_quality": 20.0,
+        "star_growth": 0.0,
+        "focus": 10.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "pakerwreah/Calendr",
+      "url": "https://github.com/pakerwreah/Calendr",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T21:53:19.902070+00:00",
+      "pushed_at": "2026-06-17T20:04:12+00:00",
+      "stars": 2259,
+      "final_score": 53.7,
+      "ios_relevance_score": 22.0,
+      "practical_value_score": 1.0,
+      "visual_motion_score": 13.2,
+      "learning_value_score": 6.0,
+      "health_score": 11.5,
+      "score_breakdown": {
+        "ios_relevance": 22.0,
+        "practical_value": 1.0,
+        "visual_motion": 13.2,
+        "learning_value": 6.0,
+        "health": 11.5,
+        "final_score": 53.7
+      },
+      "star_growth": 1,
+      "tags": [
+        "Swift",
+        "SwiftUI",
+        "macOS",
+        "Charts",
+        "Calendar"
+      ],
+      "is_frontend": false,
+      "project_type": "图表/可视化"
+    },
+    {
+      "full_name": "pmndrs/react-spring",
+      "url": "https://github.com/pmndrs/react-spring",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T08:54:05.661096+00:00",
+      "pushed_at": "2026-06-17T07:50:05+00:00",
+      "stars": 29110,
+      "score": 60.8,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 19.6,
+        "keyword_match": 7.4,
+        "readme_quality": 17.8,
+        "star_growth": 0.0,
+        "focus": 28.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "Animation",
+        "React",
+        "TypeScript"
+      ],
+      "last_notified_at": "2026-06-17T08:54:05.661132+00:00"
+    },
+    {
+      "full_name": "pointfreeco/swift-navigation",
+      "url": "https://github.com/pointfreeco/swift-navigation",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T17:23:27.369382+00:00",
+      "pushed_at": "2026-06-17T16:40:41+00:00",
+      "stars": 2271,
+      "final_score": 65.6,
+      "ios_relevance_score": 25.0,
+      "practical_value_score": 3.0,
+      "visual_motion_score": 13.0,
+      "learning_value_score": 13.8,
+      "health_score": 10.8,
+      "score_breakdown": {
+        "ios_relevance": 25.0,
+        "practical_value": 3.0,
+        "visual_motion": 13.0,
+        "learning_value": 13.8,
+        "health": 10.8,
+        "final_score": 65.6
+      },
+      "star_growth": 0,
+      "tags": [
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Navigation",
+        "Component"
+      ],
+      "is_frontend": false,
+      "project_type": "导航/Tab/Dock",
+      "last_notified_at": "2026-06-17T17:23:27.369421+00:00"
+    },
+    {
+      "full_name": "primefaces/primeng",
+      "url": "https://github.com/primefaces/primeng",
+      "first_seen_at": "2026-06-16T22:05:39.655234+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-16T20:24:00+00:00",
+      "stars": 12513,
+      "score": 47.0,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 12.3,
+        "keyword_match": 8.4,
+        "readme_quality": 10.3,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 4.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "primefaces/primevue",
+      "url": "https://github.com/primefaces/primevue",
+      "first_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T14:27:26+00:00",
+      "stars": 14460,
+      "score": 54.1,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 19.8,
+        "keyword_match": 8.4,
+        "readme_quality": 14.4,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Vue",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "primer/react",
+      "url": "https://github.com/primer/react",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T14:49:44+00:00",
+      "stars": 3860,
+      "score": 53.7,
+      "score_breakdown": {
+        "stars": 19.1,
+        "recent_activity": 20.0,
+        "keyword_match": 8.4,
+        "readme_quality": 13.2,
+        "star_growth": 2.0,
+        "focus": 0.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 1,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "radix-ui/primitives",
+      "url": "https://github.com/radix-ui/primitives",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-16T21:41:17+00:00",
+      "stars": 18986,
+      "score": 46.7,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 12.9,
+        "keyword_match": 10.5,
+        "readme_quality": 11.8,
+        "star_growth": 0.0,
+        "focus": 10.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "react-bootstrap/react-bootstrap",
+      "url": "https://github.com/react-bootstrap/react-bootstrap",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T00:29:32+00:00",
+      "stars": 22607,
+      "score": 48.2,
+      "score_breakdown": {
+        "stars": 20.5,
+        "recent_activity": 14.0,
+        "keyword_match": 5.7,
+        "readme_quality": 17.0,
+        "star_growth": 0.0,
+        "focus": 10.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "ReactTooltip/react-tooltip",
+      "url": "https://github.com/ReactTooltip/react-tooltip",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T08:54:02.471257+00:00",
+      "pushed_at": "2026-06-15T14:19:44+00:00",
+      "stars": 3819,
+      "score": 33.3,
+      "score_breakdown": {
+        "stars": 19.1,
+        "recent_activity": 2.3,
+        "keyword_match": 5.4,
+        "readme_quality": 20.0,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 13.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "reshaped-ui/reshaped",
+      "url": "https://github.com/reshaped-ui/reshaped",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-16T21:30:11+00:00",
+      "stars": 2187,
+      "score": 38.4,
+      "score_breakdown": {
+        "stars": 17.8,
+        "recent_activity": 12.8,
+        "keyword_match": 8.7,
+        "readme_quality": 8.0,
+        "star_growth": 4.6,
+        "focus": 10.0,
+        "generic_penalty": 13.5
+      },
+      "star_growth": 4,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "seek-oss/braid-design-system",
+      "url": "https://github.com/seek-oss/braid-design-system",
+      "first_seen_at": "2026-06-17T08:54:02.471257+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-16T23:30:25+00:00",
+      "stars": 1566,
+      "score": 51.8,
+      "score_breakdown": {
+        "stars": 17.0,
+        "recent_activity": 13.6,
+        "keyword_match": 10.2,
+        "readme_quality": 20.0,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "Shubham0812/SwiftUI-Animations",
+      "url": "https://github.com/Shubham0812/SwiftUI-Animations",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T21:53:19.902070+00:00",
+      "pushed_at": "2026-06-07T06:55:56+00:00",
+      "stars": 2870,
+      "final_score": 51.4,
+      "ios_relevance_score": 23.0,
+      "practical_value_score": 0.0,
+      "visual_motion_score": 14.2,
+      "learning_value_score": 4.0,
+      "health_score": 10.2,
+      "score_breakdown": {
+        "ios_relevance": 23.0,
+        "practical_value": 0.0,
+        "visual_motion": 14.2,
+        "learning_value": 4.0,
+        "health": 10.2,
+        "final_score": 51.4
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "Animation",
+        "Metal/3D",
+        "Component"
+      ],
+      "is_frontend": false,
+      "project_type": "动效库"
+    },
+    {
+      "full_name": "signerlabs/ShipSwift",
+      "url": "https://github.com/signerlabs/ShipSwift",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T21:53:19.902070+00:00",
+      "pushed_at": "2026-06-08T04:36:13+00:00",
+      "stars": 2181,
+      "final_score": 64.5,
+      "ios_relevance_score": 23.0,
+      "practical_value_score": 4.0,
+      "visual_motion_score": 16.0,
+      "learning_value_score": 11.4,
+      "health_score": 10.1,
+      "score_breakdown": {
+        "ios_relevance": 23.0,
+        "practical_value": 4.0,
+        "visual_motion": 16.0,
+        "learning_value": 11.4,
+        "health": 10.1,
+        "final_score": 64.5
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "Animation",
+        "Charts",
+        "Loading",
+        "Metal/3D",
+        "Design System",
+        "Component"
+      ],
+      "is_frontend": false,
+      "project_type": "加载/骨架屏"
+    },
+    {
+      "full_name": "siteline/swiftui-introspect",
+      "url": "https://github.com/siteline/swiftui-introspect",
+      "first_seen_at": "2026-06-17T16:38:17.876332+00:00",
+      "last_seen_at": "2026-06-17T16:38:21.743666+00:00",
+      "pushed_at": "2026-06-09T19:59:04+00:00",
+      "stars": 6505,
+      "final_score": 70.8,
+      "ios_relevance_score": 28.0,
+      "practical_value_score": 12.0,
+      "visual_motion_score": 7.4,
+      "learning_value_score": 12.4,
+      "health_score": 11.0,
+      "score_breakdown": {
+        "ios_relevance": 28.0,
+        "practical_value": 12.0,
+        "visual_motion": 7.4,
+        "learning_value": 12.4,
+        "health": 11.0,
+        "final_score": 70.8
+      },
+      "star_growth": 0,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Metal/3D",
+        "Component"
+      ],
+      "is_frontend": false,
+      "last_notified_at": "2026-06-17T16:38:21.743743+00:00"
+    },
+    {
+      "full_name": "skeletonlabs/skeleton",
+      "url": "https://github.com/skeletonlabs/skeleton",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-15T19:24:52+00:00",
+      "stars": 5983,
+      "score": 34.4,
+      "score_breakdown": {
+        "stars": 20.1,
+        "recent_activity": 1.9,
+        "keyword_match": 8.4,
+        "readme_quality": 11.0,
+        "star_growth": 2.0,
+        "focus": 0.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 1,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "software-mansion/react-native-reanimated",
+      "url": "https://github.com/software-mansion/react-native-reanimated",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T15:38:57+00:00",
+      "stars": 10889,
+      "score": 70.7,
+      "score_breakdown": {
+        "stars": 21.5,
+        "recent_activity": 19.6,
+        "keyword_match": 12.6,
+        "readme_quality": 17.0,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Animation",
+        "Gesture",
+        "React",
+        "TypeScript"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    },
+    {
+      "full_name": "storybookjs/storybook",
+      "url": "https://github.com/storybookjs/storybook",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T16:34:08+00:00",
+      "stars": 90356,
+      "score": 79.4,
+      "score_breakdown": {
+        "stars": 25.0,
+        "recent_activity": 20.0,
+        "keyword_match": 16.4,
+        "readme_quality": 18.0,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    },
+    {
+      "full_name": "teambit/bit",
+      "url": "https://github.com/teambit/bit",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T16:17:56+00:00",
+      "stars": 18408,
+      "score": 72.6,
+      "score_breakdown": {
+        "stars": 22.7,
+        "recent_activity": 19.9,
+        "keyword_match": 13.0,
+        "readme_quality": 17.0,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Frontend",
+        "Component"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    },
+    {
+      "full_name": "Tencent/tdesign",
+      "url": "https://github.com/Tencent/tdesign",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T06:05:58+00:00",
+      "stars": 3901,
+      "score": 60.7,
+      "score_breakdown": {
+        "stars": 19.1,
+        "recent_activity": 16.4,
+        "keyword_match": 10.2,
+        "readme_quality": 15.0,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "Vue",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "Tencent/tdesign-vue-next",
+      "url": "https://github.com/Tencent/tdesign-vue-next",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T07:50:07+00:00",
+      "stars": 2110,
+      "score": 53.3,
+      "score_breakdown": {
+        "stars": 17.7,
+        "recent_activity": 17.1,
+        "keyword_match": 10.5,
+        "readme_quality": 17.0,
+        "star_growth": 0.0,
+        "focus": 10.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Vue",
+        "TypeScript",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "Tresjs/tres",
+      "url": "https://github.com/Tresjs/tres",
+      "first_seen_at": "2026-06-16T17:16:36.457714+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T13:51:30+00:00",
+      "stars": 3594,
+      "score": 58.4,
+      "score_breakdown": {
+        "stars": 18.9,
+        "recent_activity": 19.6,
+        "keyword_match": 3.9,
+        "readme_quality": 16.0,
+        "star_growth": 0.0,
+        "focus": 10.0,
+        "generic_penalty": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Vue",
+        "Component"
+      ]
+    },
+    {
+      "full_name": "tsparticles/tsparticles",
+      "url": "https://github.com/tsparticles/tsparticles",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T14:26:51+00:00",
+      "stars": 8887,
+      "score": 73.1,
+      "score_breakdown": {
+        "stars": 21.0,
+        "recent_activity": 19.1,
+        "keyword_match": 14.0,
+        "readme_quality": 19.0,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Animation",
+        "React",
+        "Vue",
+        "TypeScript",
+        "Component"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    },
+    {
+      "full_name": "unovue/reka-ui",
+      "url": "https://github.com/unovue/reka-ui",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-17T14:50:41.544544+00:00",
+      "pushed_at": "2026-06-17T06:23:51+00:00",
+      "stars": 6561,
+      "score": 54.1,
+      "score_breakdown": {
+        "stars": 20.3,
+        "recent_activity": 16.5,
+        "keyword_match": 10.8,
+        "readme_quality": 15.5,
+        "star_growth": 0.0,
+        "focus": 20.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "React",
+        "Vue",
+        "Frontend",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "varletjs/varlet",
+      "url": "https://github.com/varletjs/varlet",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T22:05:39.655234+00:00",
+      "pushed_at": "2026-06-16T13:50:15+00:00",
+      "stars": 5324,
+      "score": 52.8,
+      "score_breakdown": {
+        "stars": 19.8,
+        "recent_activity": 16.6,
+        "keyword_match": 8.4,
+        "readme_quality": 17.0,
+        "star_growth": 0.0,
+        "focus": 0.0,
+        "generic_penalty": 9.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Vue",
+        "TypeScript",
+        "Component",
+        "Design System"
+      ]
+    },
+    {
+      "full_name": "vuetifyjs/vuetify",
+      "url": "https://github.com/vuetifyjs/vuetify",
+      "first_seen_at": "2026-06-16T16:38:21.230450+00:00",
+      "last_seen_at": "2026-06-16T16:38:25.389068+00:00",
+      "pushed_at": "2026-06-16T15:01:55+00:00",
+      "stars": 41003,
+      "score": 70.0,
+      "score_breakdown": {
+        "stars": 24.5,
+        "recent_activity": 19.3,
+        "keyword_match": 7.2,
+        "readme_quality": 19.0,
+        "star_growth": 0.0
+      },
+      "star_growth": 0,
+      "tags": [
+        "Vue",
+        "TypeScript",
+        "Component"
+      ],
+      "last_notified_at": "2026-06-16T16:38:25.389136+00:00"
+    }
+  ]
+}
