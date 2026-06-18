@@ -26,17 +26,22 @@ FORBIDDEN_OUTPUT_TERMS = (
 CIRCLED = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳"
 
 
-SYSTEM_PROMPT = """你是一个开源项目筛选助手。你的任务是把候选开源项目改写成适合聊天窗口阅读的短摘要，不是写完整报告。
+SYSTEM_PROMPT = """你是一个开源项目筛选助手。把候选项目改写成聊天窗口短卡片。
 
 硬性要求：
-1. 不减少项目数量，输入多少个项目就输出多少个项目。
-2. 不要使用 Markdown 标题、表格、markdown 链接。
+1. 输入多少个项目就输出多少个项目，不减少。
+2. 不要 Markdown 标题、表格、markdown 链接。
 3. 不要输出 Topics 全量、Pushed、Star Growth、Score breakdown。
-4. 不要重复标题。
-5. 每个项目最多 5 行。
-6. 每个项目必须包含 GitHub 链接。
-7. 只基于输入数据写，不要编造。
-8. 信息不足时写"信息不足，建议打开确认"。"""
+4. 每个项目最多 4 行。
+5. 每个项目必须包含 GitHub 链接。
+6. 只基于输入数据写，不要编造。
+7. 信息不足时写"信息不足，建议打开确认"。
+
+格式示例（严格遵循）：
+① 项目名
+⭐ 73分 | Claude · Skill · Plugin
+一句话说明它是什么、能怎么用
+🔗 https://github.com/owner/repo"""
 
 
 def compose_wechat_digest_with_ai(
@@ -65,12 +70,13 @@ def compose_wechat_digest_with_ai(
 def format_compact_wechat_digest(repos: list[Repository], app_title: str = "GitHub Radar") -> str:
     header = app_title
     lines = [
-        header,
+        f"📡 {header}",
         f"本轮发现 {len(repos)} 个项目",
+        "",
     ]
     for index, repo in enumerate(repos, start=1):
+        lines.extend(_format_repo_card(index, repo, include_risk=False))
         lines.append("")
-        lines.extend(_format_repo_card(index, repo, include_risk=True))
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -188,16 +194,11 @@ readme_excerpt: {readme_excerpt}
     separator = "\n---\n"
     return f"""请把下面 {len(repos)} 个项目全部改写成聊天窗口短卡片，目标总长度尽量不超过 {max_chars} 字。
 
-固定格式：
-{app_title}
-本轮发现 {len(repos)} 个项目
-
-① 项目名｜分数｜类型
-用途：一句话说明它到底是什么。
-能用：一句话说明怎么用。
-看点：2-3 个关键词短语。
-风险：一句话风险；信息不足就写"信息不足，建议打开确认"。
-链接：https://github.com/owner/repo
+固定格式（严格遵循，每项之间空一行）：
+① 项目名
+⭐ 分数分 | 标签1 · 标签2 · 标签3
+一句话说明它是什么、能怎么用、亮点
+🔗 https://github.com/owner/repo
 
 项目输入：
 {separator.join(blocks)}
@@ -220,8 +221,10 @@ def _normalize_digest(content: str, repos: list[Repository], app_title: str = "G
     lines = [line.rstrip() for line in content.strip().splitlines()]
     lines = [line for line in lines if not line.lstrip().startswith("#")]
     lines = [line for line in lines if not any(term in line for term in FORBIDDEN_OUTPUT_TERMS)]
-    if not lines or lines[0] != app_title:
-        lines.insert(0, app_title)
+    header = f"📡 {app_title}"
+    if not lines or (lines[0] != header and lines[0] != app_title):
+        lines.insert(0, header)
+    lines = _dedupe_header(lines, header)
     lines = _dedupe_header(lines, app_title)
     if len(lines) == 1 or not any("本轮发现" in line for line in lines[:3]):
         lines.insert(1, f"本轮发现 {len(repos)} 个项目")
@@ -245,43 +248,26 @@ def _contains_all_links(content: str, repos: list[Repository]) -> bool:
 
 
 def _format_repo_card(index: int, repo: Repository, *, include_risk: bool) -> list[str]:
+    tags = _compact_tags(repo)
+    summary_line = _one_line_summary(repo)
     lines = [
-        f"{_marker(index)} {repo.name}｜{repo.final_score:.0f}分｜{repo.project_type}",
-        f"用途：{_purpose(repo)}",
-        f"能用：{_usage(repo)}",
-        f"看点：{_highlights(repo)}",
+        f"{_marker(index)} {repo.name}",
+        f"⭐ {repo.final_score:.0f}分 | {tags}",
+        summary_line,
+        f"🔗 {repo.html_url}",
     ]
-    if include_risk:
-        lines.append(f"风险：{_risk(repo)}")
-    lines.append(f"链接：{repo.html_url}")
     return lines
 
 
 def _format_with_card_mode(repos: list[Repository], *, app_title: str = "GitHub Radar", mode: str) -> str:
     lines = [
-        app_title,
+        f"📡 {app_title}",
         f"本轮发现 {len(repos)} 个项目",
+        "",
     ]
     for index, repo in enumerate(repos, start=1):
+        lines.extend(_format_repo_card(index, repo, include_risk=False))
         lines.append("")
-        if mode == "minimal":
-            lines.extend(
-                [
-                    f"{_marker(index)} {repo.name}｜{repo.final_score:.0f}分｜{repo.project_type}",
-                    f"用途：{_shorten(_purpose(repo), 58)}",
-                    f"链接：{repo.html_url}",
-                ]
-            )
-        else:
-            lines.extend(
-                [
-                    f"{_marker(index)} {repo.name}｜{repo.final_score:.0f}分｜{repo.project_type}",
-                    f"用途：{_shorten(_purpose(repo), 58)}",
-                    f"能用：{_shorten(_usage(repo), 62)}",
-                    f"看点：{_shorten(_highlights(repo), 56)}",
-                    f"链接：{repo.html_url}",
-                ]
-            )
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -314,6 +300,30 @@ def _risk(repo: Repository) -> str:
     summary = repo.summary
     if summary and summary.integration:
         return _clean_sentence(summary.integration)
+    return "信息不足，建议打开确认。"
+
+
+def _compact_tags(repo: Repository) -> str:
+    """Pick up to 3 most relevant tags for display (excluding language)."""
+    lang = (repo.language or "").lower()
+    skip = {lang, "other"}
+    tags = [t for t in repo.tags if t.lower() not in skip]
+    if not tags:
+        tags = [repo.project_type]
+    return " · ".join(tags[:3])
+
+
+def _one_line_summary(repo: Repository) -> str:
+    """Merge purpose + usage into a single readable line."""
+    summary = repo.summary
+    if summary and summary.positioning and summary.usage:
+        pos = _clean_sentence(summary.positioning).rstrip("。")
+        use = _clean_sentence(summary.usage).rstrip("。")
+        return f"{pos}；{use}。"
+    if summary and summary.positioning:
+        return _clean_sentence(summary.positioning)
+    if repo.description:
+        return _clean_sentence(repo.description)
     return "信息不足，建议打开确认。"
 
 
